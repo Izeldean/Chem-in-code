@@ -1,0 +1,122 @@
+body{
+          background-color: black;
+          color: aliceblue;
+
+}
+
+.fraction {
+display: inline-block;
+text-align: center;
+}
+
+.fraction > span {
+display: block;
+font-size: 1.2 em;
+}
+
+.fraction > span:first-child {
+border-bottom: 1px solid white;
+}
+
+button{
+          background-color: black;
+          color: yellow;
+        border-color: aliceblue;
+     }
+     input {
+font-size: 14px;
+     background-color: black;
+     color: white;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+.container {
+          display: flex;
+          align-items: center; /* Center items vertically */
+      }
+      .vertical {
+          display: flex;
+          flex-direction: column; /* Stack letters vertically */
+          margin-right: 10px; /* Space between vertical letters and the right letter */
+      }
+      .box {
+          width: 100px;
+          height: 100px;
+          border: 2px solid #000;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          font-family: Arial, sans-serif;
+      }
+      .number {
+          position: absolute;
+          top: 5px; /* Adjusts the number's position */
+          font-size: 20px; /* Adjust size as needed */
+      }
+      .letter {
+          font-size: 36px; /* Adjust size as needed */
+      }
+      .container1 {
+          display: flex;
+          justify-content: center; /* Center horizontally */
+          align-items: center;    /* Center vertically (if needed) */
+          height: 100vh;         /* Full viewport height */
+          background-color: #f0f0f0;
+      }
+      #h1{
+          
+          width: fit-content;
+          color: blanchedalmond;
+          margin: 0 auto;
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: rgb(78, 1, 21);
+          border: 2px solid rgb(56, 128, 209);
+          padding: 3px;
+          padding-bottom: 2px;
+          padding-top: 2px;
+      }
+      #t1{
+          background-color: rgb(124, 119, 104);
+          color: black;
+          border: 3px solid goldenrod;
+     }
+     .c1{
+          background-color: blue;
+          color: aliceblue;
+          border: 3px solid;
+}
+#img1{
+          display: flex;
+    justify-content: center; 
+    align-items: center;   
+    
+}
+#title1{
+          font-size: larger;
+          font-family: 'Times New Roman', Times, serif;
+}
+
+#PO2,#Co3,#Sne, #Snrn,#Ru2,#Fe2S,#S,#Rb,#Nmoles,#Almoles,#Smole,#Kmole,#Camole,#Cacharge ,#Omole, #Ocharge ,#cc2, #Hc2, #o2 ,#gcfC2H4O2,#Hgc, #Cl,#gcfhg2cl2,#cc1,#hc1,#gcfc5h12 ,#Clc, #Cc ,#bhf, #bc , #hc, #cclf, #gcfc5h12p{
+          width: 35px;
+ }
+
+#Ag3Np,#Co3PO2p, #SnCl32p,#Li2Cr2O7p,#Ru2Op,#Fe2Sp, #Rb2Bp,#CaBr2p,#AlNmolesp,#KSmolep,#CaOpres,#c2h4o2p,#gcfC2H4O2p,#HgClp, #gcfhg2cl2p,#resbh, #rcclf, #resbh3, #ccl4p{
+          width: fit-content;
+          background-color: black;
+          color: yellow;
+          padding: 4px;
+        border-color: aliceblue;    
+ }
+ .container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+.vertical {
+    display: flex;
+    flex-direction: column; /* Stack letters vertically */
+    margin-right: 10px; /* Space between vertical letters and the right letter */
+}
+#ClO32,#Li2Cr2O7{
+    width: 120px;
+}

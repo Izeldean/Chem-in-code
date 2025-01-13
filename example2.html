@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Matching Game</title>
+   <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.options, .targets {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.option, .target {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    width: 100px; /* Set a fixed width for consistent alignment */
+}
+
+.target {
+    border: 2px dashed #ccc;
+}
+
+.correct {
+    background-color: lightgreen;
+}
+
+.incorrect {
+    background-color: lightcoral;
+}
+
+   </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Match the Options</h1>
+        <div class="options">
+            <div class="option" draggable="true" data-match="apple">Apple</div>
+            <div class="option" draggable="true" data-match="banana">Banana</div>
+            <div class="option" draggable="true" data-match="cherry">Cherry</div>
+        </div>
+        <div class="targets">
+            <div class="target" data-match="apple">Target 1</div>
+            <div class="target" data-match="banana">Target 2</div>
+            <div class="target" data-match="cherry">Target 3</div>
+        </div>
+    </div>
+
+  <script>
+
+const options = document.querySelectorAll('.option');
+const targets = document.querySelectorAll('.target');
+
+options.forEach(option => {
+    option.addEventListener('dragstart', dragStart);
+});
+
+targets.forEach(target => {
+    target.addEventListener('dragover', dragOver);
+    target.addEventListener('drop', drop);
+});
+
+function dragStart(e) {
+    e.dataTransfer.setData('text/plain', e.target.dataset.match);
+}
+
+function dragOver(e) {
+    e.preventDefault();
+}
+
+function drop(e) {
+    e.preventDefault();
+    const droppedOptionMatch = e.dataTransfer.getData('text/plain');
+    const targetMatch = e.target.dataset.match;
+
+    if (droppedOptionMatch === targetMatch) {
+        e.target.classList.add('correct');
+        e.target.textContent = `${targetMatch} (Correct!)`;
+    } else {
+        e.target.classList.add('incorrect');
+        e.target.textContent = `${targetMatch} (Incorrect!)`;
+    }
+}
+
+
+
+  </script>
+</body>
+</html>

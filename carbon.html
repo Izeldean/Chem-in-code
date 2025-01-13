@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>carbon</title>
+          <style>
+                    body {
+                      /* Add some basic styling to the body */
+                      font-family: Arial, sans-serif;
+                      background-color:red;
+                      border: 3px solid;
+                      border-color: darkgray;
+                    }
+                    #div {
+                      /* Style the div */
+                      background-color: black;
+                      color: aliceblue;
+                      font-family: 'Times New Roman', Times, serif;
+                      font-size: 30px;
+                      padding: 20px;
+                      margin: 0 auto;
+                      width: 80%;
+                      border: 3px solid;
+                      border-color: darkgrey;
+                    }
+                  </style>
+</head>
+<body>
+          <div id="div">
+                    <script>
+                      var element = {
+                        elementName: "Carbon",
+                        chemicalSymbol: "C",
+                        protons: 6,
+                        atomicMassA: 12,
+                        electrons: 6,
+                        neutrons: 6,
+                        atomicMassunit: 12.011
+                      };
+                
+                      document.getElementById("div").innerHTML = "Element Name: "+element.elementName+ "<br>"+
+                        "Chemical Symbol (X)= " + element.chemicalSymbol + "<br>" +
+                        "Protons (p)= 10 " + "<br>" + "A= Mass Number= protons + neutrons= " +
+                        element.atomicMassA + "<br>" + "Electrons (e)= " + element.electrons + "<br>" +
+                        "neutrons(n)= " + element.neutrons + "<br>" + "Atomic mass unit= " +
+                        element.atomicMassunit + " amu" + "<br>" + "Carbon expreinces the following type of isotopes: C-12 and C-13";
+                    </script>
+                  </div>   
+</body>
+</html>

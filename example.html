@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Border Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .button-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        button {
+            position: relative;
+            padding: 10px 20px;
+            background-color: white;
+            border: none;
+            z-index: 1;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .snake-border {
+            position: absolute;
+            top: -5px; /* Adjust based on border width */
+            left: -5px; /* Adjust based on border width */
+            right: -5px; /* Adjust based on border width */
+            bottom: -5px; /* Adjust based on border width */
+            border: 5px solid transparent;
+            border-radius: 5px;
+            z-index: 0;
+            animation: snake 4s infinite linear;
+            background: linear-gradient(90deg, red, blue, green, orange, purple);
+            background-size: 200% 200%;
+        }
+
+        @keyframes snake {
+            0% {
+                border-color: rgb(238, 255, 0);
+                transform: scale(1);
+            }
+            20% {
+                border-color: blue;
+                transform: scale(1.05);
+            }
+            40% {
+                border-color: green;
+                transform: scale(1);
+            }
+            60% {
+                border-color: orange;
+                transform: scale(1.05);
+            }
+            80% {
+                border-color: purple;
+                transform: scale(1);
+            }
+            100% {
+                border-color: gray;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <div class="snake-border"></div>
+        <button>Animated Snake Border</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .periodic-table {
+            display: grid;
+            grid-template-columns: repeat(18, 1fr);
+            gap: 5px;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .element {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .element h3 {
+            margin: 0;
+        }
+        .element .symbol {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .element .atomic-number {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="periodic-table">
+        <div class="element"><h3 class="atomic-number">1</h3><div class="symbol">H</div><h3>Hydrogen</h3></div>
+        <div class="element"><h3 class="atomic-number">2</h3><div class="symbol">He</div><h3>Helium</h3></div>
+        <div class="element"><h3 class="atomic-number">3</h3><div class="symbol">Li</div><h3>Lithium</h3></div>
+        <div class="element"><h3 class="atomic-number">4</h3><div class="symbol">Be</div><h3>Beryllium</h3></div>
+        <div class="element"><h3 class="atomic-number">5</h3><div class="symbol">B</div><h3>Boron</h3></div>
+        <div class="element"><h3 class="atomic-number">6</h3><div class="symbol">C</div><h3>Carbon</h3></div>
+        <div class="element"><h3 class="atomic-number">7</h3><div class="symbol">N</div><h3>Nitrogen</h3></div>
+        <div class="element"><h3 class="atomic-number">8</h3><div class="symbol">O</div><h3>Oxygen</h3></div>
+        <div class="element"><h3 class="atomic-number">9</h3><div class="symbol">F</div><h3>Fluorine</h3></div>
+        <div class="element"><h3 class="atomic-number">10</h3><div class="symbol">Ne</div><h3>Neon</h3></div>
+        <!-- Add more elements as needed -->
+        <div class="element"><h3 class="atomic-number">11</h3><div class="symbol">Na</div><h3>Sodium</h3></div>
+        <div class="element"><h3 class="atomic-number">12</h3><div class="symbol">Mg</div><h3>Magnesium</h3></div>
+        <div class="element"><h3 class="atomic-number">13</h3><div class="symbol">Al</div><h3>Aluminum</h3></div>
+        <div class="element"><h3 class="atomic-number">14</h3><div class="symbol">Si</div><h3>Silicon</h3></div>
+        <div class="element"><h3 class="atomic-number">15</h3><div class="symbol">P</div><h3>Phosphorus</h3></div>
+        <div class="element"><h3 class="atomic-number">16</h3><div class="symbol">S</div><h3>Sulfur</h3></div>
+        <div class="element"><h3 class="atomic-number">17</h3><div class="symbol">Cl</div><h3>Chlorine</h3></div>
+        <div class="element"><h3 class="atomic-number">18</h3><div class="symbol">Ar</div><h3>Argon</h3></div>
+    </div>
+</body>
+</html>
